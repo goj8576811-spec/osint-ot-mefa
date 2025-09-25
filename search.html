@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>OSINT Hub — инструменты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Home -->
+  <div class="top-buttons">
+    <a href="index.html">🏠 Home</a>
+  </div>
+
+  <h1 class="page-title">Выберите направление разведки</h1>
+
+  <!-- Ветви -->
+  <div class="branches fade-list" id="branchList"></div>
+
+  <!-- Категории -->
+  <div id="categoryModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="categoryTitle"></h2>
+        <button class="icon-btn close" onclick="closeModal('categoryModal')">✕</button>
+      </div>
+      <div id="categoryList" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Инструменты -->
+  <div id="toolsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="icon-btn" onclick="backToCategories()">← Назад</button>
+        <h2 id="toolsTitle"></h2>
+        <button class="icon-btn close" onclick="closeModal('toolsModal')">✕</button>
+      </div>
+      <div id="toolsList" class="modal-body"></div>
+    </div>
+  </div>
+</body>
+</html>
